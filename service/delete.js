@@ -27,7 +27,7 @@ async function deleteUser(user){
     if(!deleteUserFunc){
         return util.buildResponse(503,{message: 'Server error. Please try again later.'});
     }
-    return util.buildResponse(200, {message:'Successfully delete user!'});
+    return util.buildResponse(200, {message:'Successfully delete ${dynamoUser} user!'});
 }
 
 async function getUser(username){
